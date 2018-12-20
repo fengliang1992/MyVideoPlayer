@@ -1,2 +1,2 @@
-git add . && git commit -m "start other app" && git push || git pull && git push
+git add . && git commit -m "draw picture" && git push || git pull && git push
 pause
