@@ -3,6 +3,7 @@ package com.fltry.demo01;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Camera;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.util.AttributeSet;
@@ -24,6 +25,7 @@ public class MySurfaceView extends SurfaceView implements SurfaceHolder.Callback
         super(context, attrs, defStyleAttr);
         bitmap = BitmapFactory.decodeResource(context.getResources(), R.mipmap.meinv);
         bitmap = MyBitmapUtils.getBitmap(bitmap, 100, 2);
+
 
         getHolder().addCallback(this);
     }
