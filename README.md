@@ -13,7 +13,7 @@
 6、将pcm文件转换成Wav文件。
 #### 播放
 1、初始化AudioTrack对象。<br>
-2、调用AudioTrack的play()启动音频设备。
-3、读取数据、解码、将解码后的数据，从缓冲区写入到AudioTrack对象中。
+2、调用AudioTrack的play()启动音频设备。<br>
+3、读取数据、解码、将解码后的数据，从缓冲区写入到AudioTrack对象中。<br>
 4、播放结束。
 
