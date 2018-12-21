@@ -218,6 +218,7 @@ public class AudioActivity extends AppCompatActivity implements View.OnClickList
                         is.close();
                         is = null;
                         log("播放结束");
+                        stopPlayRecord();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }

@@ -15,6 +15,9 @@ public class GlobalConfig {
      * 声道数。CHANNEL_IN_MONO and CHANNEL_IN_STEREO. 其中CHANNEL_IN_MONO是可以保证在所有设备能够使用的。
      */
     public static final int CHANNEL_CONFIG_IN = AudioFormat.CHANNEL_IN_MONO;
+    /**
+     * pcm音频的声道
+     */
     public static final int CHANNEL_CONFIG_OUT = AudioFormat.CHANNEL_OUT_MONO;
     /**
      * 返回的音频数据的格式。 ENCODING_PCM_8BIT, ENCODING_PCM_16BIT, and ENCODING_PCM_FLOAT.
