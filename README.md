@@ -9,5 +9,11 @@
 2、初始化AudioRecord对象。<br>
 3、调用AudioRecord的startRecording()方法开始录制。<br>
 4、另起一个线程持续的写入SD卡。<br>
-5、将pcm文件转换成Wav文件.
+5、回收AudioRecord对象。<br>
+6、将pcm文件转换成Wav文件。
+#### 播放
+1、初始化AudioTrack对象。<br>
+2、调用AudioTrack的play()启动音频设备。
+3、读取数据、解码、将解码后的数据，从缓冲区写入到AudioTrack对象中。
+4、播放结束。
 
