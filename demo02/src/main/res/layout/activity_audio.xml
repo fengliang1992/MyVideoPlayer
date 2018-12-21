@@ -11,6 +11,10 @@
             name="recording"
             type="boolean" />
 
+        <variable
+            name="playing"
+            type="boolean" />
+
     </data>
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
@@ -29,7 +33,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:clickable="@{recording}"
+                android:clickable="@{!recording}"
                 android:text="开始录音" />
 
             <Button
@@ -37,16 +41,33 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:clickable="@{!recording}"
+                android:clickable="@{recording}"
                 android:text="停止录音" />
 
         </LinearLayout>
 
-        <Button
-            android:id="@+id/audio_track"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="播放录音" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/audio_track_start"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="@{!playing}"
+                android:text="开始播放" />
+
+            <Button
+                android:id="@+id/audio_track_stop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="@{playing}"
+                android:text="停止播放" />
+
+        </LinearLayout>
 
         <Button
             android:id="@+id/audio_clear_log"
