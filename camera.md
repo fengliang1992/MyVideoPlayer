@@ -1,20 +1,5 @@
 # camera
-## device
-#### CameraId
-通过fromLegacyId(int camera1Id)或from(@Nonnull String camera2Id)创建CameraId对象，
-并通过computeLegacyIdFromCamera2Id(@Nonnull String camera2Id)或computeCameraIdFromLegacyId(int camera1Id)转换api1和api2的相机id，
-最后通过getValue()和getLegacyValue()可以得到api1和api2的相机id
-#### ActiveCameraDeviceTracker
-获取相机的cameraId对象，在相机开启关闭的时候进行赋值（创建和销毁）
-#### SingleDeviceActions
-打开关闭设备监听
-#### SingleDeviceOpenListener
-打开设备的生命周期监听
-#### CameraOpenException
-打开设备发生异常抛出的异常类（仅含errorId）
-#### CameraDeviceActionProvider
-为给定的摄像机设备键提供一组可执行操作
-#### LegacyCameraActions
-传统相机的开启和关闭（使用的是子线程）
-#### MultiCameraDeviceLifecycle
-
+## com.android.camera.device
+1、设备ID的获取。<br>
+2、设备的打开与关闭、创建与回收。<br>
+3、状态的监听及生命周期的监听，主要有打开设备、打开设备发生的异常、关闭设备、关闭设备发生的异常。
