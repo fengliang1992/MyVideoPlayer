@@ -7,11 +7,18 @@
         android:orientation="vertical"
         tools:context="com.fltry.demo03.CameraActivity">
 
+        <Button
+            android:id="@+id/camera_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextureView"
+            android:textAllCaps="false" />
 
         <SurfaceView
             android:id="@+id/camera_sv"
             android:layout_width="match_parent"
             android:layout_height="500dp" />
+
     </LinearLayout>
 </layout>
 
