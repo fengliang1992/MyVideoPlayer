@@ -21,7 +21,7 @@ public class MyGLSurfaceView extends GLSurfaceView {
         mRenderer = new MyGLRenderer();
 
         // Set the Renderer for drawing on the GLSurfaceView
-        setRenderer(mRenderer);
+        setRenderer(new MyRenderer());
         // Set the RenderMode
         setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);
     }
